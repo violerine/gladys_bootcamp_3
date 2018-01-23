@@ -1,0 +1,42 @@
+
+<div class = "backgroundd">
+
+<!-----sdsds-->
+
+
+
+
+<form #f="ngForm" (ngSubmit)="Login(f)" action="/action_page.php">
+  <div class="container col-xs-12 col-sm-12">
+
+      <div class="header">
+          <h1>LOG IN</h1>
+          </div>
+    <label><b>Username</b></label>
+    <input class="input" type="text" placeholder="Enter Username" name="username" required ngModel>
+    <br>
+
+    <label><b>Password</b></label>
+    <input class="input" type="password" placeholder="Enter Password" name="password" required ngModel>
+    <br>
+
+
+
+    <div>
+          {{emptyfield}}
+    </div>
+    
+
+    <br>
+    <input type="checkbox" checked="checked"> Remember me
+    <br>
+
+    <div class="clearfix">
+      <button type="button"  class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Login</button>
+    </div>
+  </div>
+</form>
+
+
+</div>

@@ -1,0 +1,37 @@
+.backgroundd {
+    display: flex;
+    background-image: url("/assets/list1.jpeg");
+    height: 100vh;
+    justify-content: center !important
+  }
+    
+  .w3-top{
+      opacity : 0.5 !important
+    }
+    
+    .inputfile {
+         overflow: hidden; 
+      position: absolute;
+        z-index: -1 !important
+    }
+  
+  .Link{
+    position: relative;
+    padding-left: 50px;
+  }
+  
+  .w3-jumbo w3-display-middle{
+    color : white !important
+  }
+  
+  .w3-jumbo {
+    font-size: 51px!important;
+  }
+  
+    
+  
+    
+  
+    
+  
+  

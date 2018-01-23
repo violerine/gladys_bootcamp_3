@@ -1,0 +1,48 @@
+
+
+
+<div class = "backgroundd">
+
+<!-----sdsds-->
+
+<div>
+    
+<form #f="ngForm" (ngSubmit)="Signup(f)" action="/action_page.php">
+  <div class="container col-xs-12 col-md-12">
+      <div class="header">
+          <h1>SIGN UP</h1>
+          </div>
+
+    <label><b>Username</b></label>
+    <input class="input" type="text" placeholder="Username" name="username" required ngModel>
+    <br>
+    
+    <label><b>Password</b></label>
+    <input class="input" type="password" placeholder="Enter Password" name="password" required ngModel>
+    <br>
+
+    <label><b>Repeat Password</b></label>
+    <input class="input" type="password" placeholder="Repeat Password" name="pswrepeat" required ngModel>
+    <br>
+
+    <input type="checkbox" required name="checkbox"  #tc="ngModel" required ngModel> Agree to Term and Service
+
+    <div *ngIf="tc.invalid"> 
+      <br>
+      You have to Accept Term and Conditions
+    </div> 
+
+    <p>{{salahpass || emptyfield}}  <a href="#">Terms & Privacy</a>.</p>
+
+   
+    
+    <br>
+
+    <div class="clearfix">
+      <button type="button"  class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</div>
