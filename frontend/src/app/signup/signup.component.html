@@ -25,7 +25,7 @@
     <input class="input" type="password" placeholder="Repeat Password" name="pswrepeat" required ngModel>
     <br>
 
-    <input type="checkbox" required name="checkbox"  #tc="ngModel" required ngModel> Agree to Term and Service
+    <input type="checkbox" required name="checkbox" (change)="checkbox($event)" #tc="ngModel" required ngModel> Agree to Term and Service
 
     <div *ngIf="tc.invalid"> 
       <br>
