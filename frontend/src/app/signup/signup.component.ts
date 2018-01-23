@@ -19,10 +19,23 @@ export class SignupComponent implements OnInit {
   salahpass
   emptyfield
   checkboxempty
+  
+  
+  checkboxx = false
+
+  checkbox(x){
+    if(x.target.checkbox){
+      this.checkboxx = false
+    }
+    else{
+      this.checkboxx = true
+    }
+    console.log(this.checkboxx)
+  }
 
   Signup(f:NgForm){
 
-  if(f.value.pswrepeat==f.value.password && f.value.pswrepeat!=="" && f.value.password!=="" ){
+  if(f.value.pswrepeat==f.value.password && f.value.pswrepeat!=="" && f.value.password!=="" && this.checkboxx == true ){
       
     let obj = {
       name : f.value.name,
@@ -55,10 +68,6 @@ export class SignupComponent implements OnInit {
     this.emptyfield="Field cannot be empty"
   }
 
-  else if(f.value.checkbox==false){
-    console.log("checkbox not checked")
-    this.checkboxempty="checkbox"
-  }
 
 
 
